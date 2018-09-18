@@ -3,18 +3,18 @@
   <head>
     <title>Red Cactus Records</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Knewave" rel="stylesheet">
-
+    <script src="scripts.js"></script>
 
   </head>
   <body>
     <button id="nav-burger-btn" onclick = 'openNav()'><i class="fa fa-bars"></i></button>
-    <nav id="nav-burger">
-      <a class="navlinks" href="artists.html">Artists</a></li>
-      <a class="navlinks" href="releases.html">Releases</a></li>
-      <a class="navlinks" href="photos.html">Photos</a></li>
-      <a class="navlinks" href="contact.html">Contact</a></li>
+    <nav id="nav-burger" style="display: none;">
+      <a class="navlinks" href="artists.html">Artists</a>
+      <a class="navlinks" href="releases.html">Releases</a>
+      <a class="navlinks" href="photos.html">Photos</a>
+      <a class="navlinks" href="contact.html">Contact</a>
     </nav>
     <div id="container">
       <div id="banner">
@@ -38,48 +38,27 @@
 
       <div id="photoslider"></div>
       <ul class="social-btns">
-          <li><a href="https://www.facebook.com/RedCactusRecords/"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://twitter.com/redcactusrcrds"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://www.instagram.com/redcactusrecords/"><i class="fa fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fa fa-spotify"></i></a></li>
-          <li><a href="#" ><i class="fa fa-youtube"></i></a></li>
+          <li><a href="https://www.facebook.com/RedCactusRecords/"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/redcactusrcrds"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/redcactusrecords/"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-spotify"></i></a></li>
+          <li><a href="#" ><i class="fab fa-youtube"></i></a></li>
       </ul>
       <span class="line"></span>
       <div id='about-text'>about us</div>
-      <div id='about'>
+      <div id='about-holder'>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ex leo, ultricies sit amet leo quis, egestas fringilla ex. Nullam ultrices tortor in nisi ullamcorper efficitur. Suspendisse potenti. Cras faucibus, massa sed efficitur tincidunt, mi ligula vulputate urna, ut faucibus ligula orci eget libero. Cras egestas congue velit a auctor. Mauris fringilla, lorem quis faucibus mollis, libero arcu rutrum magna, ut porta ex ante quis tortor. Praesent maximus eros id felis volutpat, ac maximus tellus interdum. Mauris tellus risus, luctus et justo eu, aliquam eleifend metus. Nullam quis purus venenatis, venenatis massa a, convallis lacus. Nam orci purus, porta nec massa vitae, condimentum ultricies orci. Morbi tortor nunc, efficitur id pretium ut, hendrerit eu lectus. Duis nec nibh consequat, placerat libero quis, vehicula tortor.
 
         Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam pellentesque erat augue. Suspendisse ut felis at augue dignissim molestie id id eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin eget pulvinar magna. Quisque nec ipsum placerat odio aliquam porta. Maecenas consectetur risus in imperdiet tristique. Nam efficitur efficitur nisi. Mauris ac venenatis tortor. Fusce vel leo congue, tempor nisl pulvinar, fringilla eros. Praesent ac nisl fermentum tortor laoreet volutpat vitae at dolor. Maecenas et ornare turpis. Aliquam nec ornare diam.
       </div>
+
+      <div id="about" style="display: none;">blahblah</div>
+      <div id="read-more" onclick="moreText()"><i class="fas fa-angle-down"></i></div>
       <div id='schedule'></div>
       <div id='soundcloud'></div>
       <div id='email-list'></div>
       <footer></footer>
     </div>
-
-
+    
   </body>
-  <script>
-
-    function openNav(){
-      var burger_btn = document.getElementById("nav-burger-btn");
-      var element = document.getElementById("nav-burger");
-      if (element.style.display === "none"){
-        element.style.display = "block";
-        burger_btn.style.backgroundColor = "#C43117";
-        burger_btn.style.color = "white";
-        burger_btn.style.boxShadow = "none";
-
-      }else{
-        element.style.display = "none";
-        burger_btn.style.backgroundColor = "lightgray";
-        burger_btn.style.color = "gray";
-        burger_btn.style.boxShadow = "-3px 3px gray";
-
-      }
-    }
-
-
-
-  </script>
 </html
